@@ -1,8 +1,8 @@
 # 🦀 CrabCraft
-A minecraft server implementation in Rust, with ability to load Paper (bukkit) plugins. 
+A drop-in replacement for Paper Minecraft Server written in Rust.
 
-## Development
-CrabCraft is in very, very early stage of development, please report any bugs!
-
-[![Build](https://github.com/CrabCraftDev/CrabCraft/actions/workflows/build.yml/badge.svg)](https://github.com/CrabCraftDev/CrabCraft/actions/workflows/build.yml)
-[![Tests](https://github.com/CrabCraftDev/CrabCraft/actions/workflows/tests.yml/badge.svg)](https://github.com/CrabCraftDev/CrabCraft/actions/workflows/tests.yml)
+> [!IMPORTANT]  
+>
+> CrabCraft is in very early stages of development.<br>
+> Source code will be published after we reach `v0.1.0`
+>
