@@ -1,5 +1,8 @@
 # 🦀 CrabCraft
-A drop-in replacement for Paper Minecraft Server written in Rust.
+
+Minecraft server written in Rust. 
+
+If you want to get in touch, join our [Discord server](https://discord.gg/ZSqcGUHD48)!
 
 > [!IMPORTANT]  
 >
