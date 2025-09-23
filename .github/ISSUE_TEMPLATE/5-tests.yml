@@ -2,6 +2,8 @@ name: 🧪 Tests
 description: Suggest a new test or improvement to existing tests.
 title: "[Tests]: "
 type: "tests"
+labels:
+  - "status: pending triage"
 body:
   - type: textarea
     id: suggestion

@@ -2,6 +2,8 @@ name: ✨ Feature
 description: Request a new feature or propose an improvement.
 title: "[Feat]: "
 type: "feature"
+labels:
+  - "status: pending triage"
 body:
   - type: textarea
     attributes:

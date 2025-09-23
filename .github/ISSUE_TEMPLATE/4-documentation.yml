@@ -2,6 +2,8 @@ name: 📚 Documentation
 description: Suggest new documentation or improvements (typos, clarity, details).
 title: "[Documentation]: "
 type: "documentation"
+labels:
+  - "status: pending triage"
 body:
   - type: textarea
     id: suggestion

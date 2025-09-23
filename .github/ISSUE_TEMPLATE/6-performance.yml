@@ -2,6 +2,8 @@ name: 🦀 Performance
 description: Report a performance issue or suggest an optimization.
 title: "[Perf]: "
 type: "performance"
+labels:
+  - "status: pending triage"
 body:
   - type: textarea
     id: description
