@@ -1,0 +1,47 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "timezone": "Europe/Warsaw",
+  "rangeStrategy": "auto",
+  "extends": [
+    "config:recommended",
+    "group:allNonMajor",
+    ":semanticCommitTypeAll(chore)",
+    "workarounds:all",
+    ":preserveSemverRanges",
+    "schedule:weekly",
+    ":disableDependencyDashboard"
+  ],
+  "dependencyDashboard": false,
+  "regexManagers": [
+    {
+      "fileMatch": ["(^|/)rust-toolchain\\.toml?$"],
+      "matchStrings": [
+        "channel\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+(\\.\\d+)?)\""
+      ],
+      "depNameTemplate": "rust",
+      "lookupNameTemplate": "rust-lang/rust",
+      "datasourceTemplate": "github-tags"
+    }
+  ],
+  "packageRules": [
+    {
+      "groupName": "Rust dev dependencies",
+      "matchDepTypes": ["dev-dependencies"],
+      "matchManagers": ["cargo"]
+    },
+    {
+      "groupName": "Rust runtime dependencies",
+      "matchDepTypes": ["dependencies"],
+      "matchManagers": ["cargo"]
+    },
+    {
+      "groupName": "Rust toolchain",
+      "matchManagers": ["regex", "dockerfile"],
+      "matchDepNames": ["rust", "lukemathwalker/cargo-chef"],
+      "separateMultipleMajor": false
+    }
+  ],
+  "lockFileMaintenance": {
+    "enabled": true
+  }
+}
